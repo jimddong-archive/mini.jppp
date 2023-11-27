@@ -125,8 +125,10 @@
                         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
                             <div class="col">
                                 <div class="card shadow-sm" style="height: 380px">
-                                    <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="40%" y="50%" fill="#eceeef" dy=".3em">
-                                        틱택토 게임</text></svg>
+                                    <div class="thumbnail" th:onclick="|location.href='@{/main/tictactoe}'|" onclick="location.href='tictactoe.html'" style="cursor: pointer">
+                                        <div class="thumb-img"><img class="card-img-top" role="img" th:attr="src=@{/img/tictacImg.png}" src="../img/tictacImg.png"></div>
+                                        <label class="game-name">틱택토 게임</label>
+                                    </div>
                                     <div class="card-body">
                                         <p class="card-text">친구와 함께 틱택토 게임을 플레이해보세요.</p>
                                         <div class="d-flex justify-content-between align-items-center">
