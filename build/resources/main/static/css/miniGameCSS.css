@@ -74,15 +74,12 @@ body.fade{
     font-weight: 500;
 }
 
-/*.card-img-top {*/
-/*    transition: all 0.2s linear;*/
-/*    height: 225px;*/
-/*    margin: 0 auto;*/
-/*    overflow: hidden;*/
-/*}*/
-
 .thumb-img :hover {
     filter: brightness(40%);
     transition: all 0.2s linear;
 }
 
+.text-body-secondary{
+    position: absolute;
+    right: 7%;
+}
