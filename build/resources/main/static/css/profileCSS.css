@@ -1,0 +1,15 @@
+body{
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+body.fade{
+    opacity: 0;
+}
+
+#profImg{
+    position: relative;
+    top: 20%;
+    left: 20%;
+}

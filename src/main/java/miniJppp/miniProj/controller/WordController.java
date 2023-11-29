@@ -55,4 +55,9 @@ public class WordController {
     public String tictactoe() {
         return"main/tictactoe";
     }
+
+    @GetMapping("/profile")
+    public String profile() {
+        return"main/profile";
+    }
 }
