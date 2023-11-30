@@ -5,15 +5,15 @@ body {
     background-color: rgb(31,34,38) !important;
 }
 
-body.fade{
+body.fade {
     opacity: 0;
 }
 
-.p-3{
+.p-3 {
 
 }
 
-#all{
+#all {
     font-family: 'IBM Plex Sans KR', sans-serif;
     position: relative;
     top: 100px;
@@ -28,10 +28,11 @@ body.fade{
 
 .scrollspy-example {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 600px;
-    height: 400px;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    width: 1160px;
+    height: 550px;
     border-radius: 15px;
     overflow: scroll;
 }
@@ -41,6 +42,37 @@ body.fade{
     background-color: rgb(31,34,38);
 }
 
-.colorscripter-code::-webkit-scrollbar{
+.colorscripter-code::-webkit-scrollbar {
+    display: none;
+}
+
+#chapDiv {
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    width: 130px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#selectChapter {
+    position: absolute;
+    bottom: 25px;
+    left: 40px;
+}
+
+#selectChapter button{
+    border-style: none;
+    background: none;
+}
+
+#showChapter {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    height: 10px;
+    color: black;
+    border-style: none;
     display: none;
 }
