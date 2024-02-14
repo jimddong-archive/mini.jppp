@@ -1,0 +1,95 @@
+body {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 1s;
+    background-color: rgb(31,34,38) !important;
+}
+
+body.fade{
+    opacity: 0;
+}
+
+.p-3{
+
+}
+
+#all{
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    position: relative;
+    top: 100px;
+    left: 50%;
+    border-radius: 30px;
+    width: 1200px;
+    height: 650px;
+    margin-left: -600px;
+    border: 2px solid rgb(166, 166, 166);
+    background-color: white;
+}
+
+.scrollspy-example {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 1160px;
+    height: 560px;
+    border-radius: 15px;
+    overflow: scroll;
+}
+
+.colorscripter-code {
+    font-size: 10pt;
+    background-color: rgb(31,34,38);
+}
+
+.colorscripter-code::-webkit-scrollbar{
+    display: none;
+}
+
+#chapDiv {
+    position: absolute;
+    bottom: 10px;
+    left: 25px;
+    width: 130px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+#selectChapter {
+    position: absolute;
+    bottom: 25px;
+    left: 40px;
+}
+
+#selectChapter button{
+    border-style: none;
+    background: none;
+}
+
+#showChapter {
+    position: absolute;
+    top: 0;
+    left: 105px;
+    color: black;
+    border-style: none;
+    display: none;
+}
+
+#showChapter svg {
+    position: relative;
+    left: -5px;
+}
+
+#showChapter table {
+    position: relative;
+    top: -25px;
+    left: 40px;
+}
+
+#showChapter tr {
+    font-weight: 300;
+}
+
+#showChapter td:hover {
+    font-weight: 500;
+}
