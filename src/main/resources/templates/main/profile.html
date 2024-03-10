@@ -40,18 +40,12 @@
           <li><a th:onclick="|location.href='@{/main/miniGame}'|" onclick="location.href='miniGame.html'" class="nav-link px-2 link-body-emphasis">Mini game</a></li>
         </ul>
 
-        <form class="col-2 col-md-3 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-        </form>
-
         <div class="dropdown text-end">
           <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle"
              data-bs-toggle="dropdown" aria-expanded="false">
             <img th:attr="src=@{/img/userProfile.jpeg}" src="../img/userProfile.jpeg" alt="mdo" width="32" height="32" class="rounded-circle">
           </a>
           <ul class="dropdown-menu text-small">
-            <li><a class="dropdown-item" href="#">New project...</a></li>
-            <li><a class="dropdown-item" href="#">Settings</a></li>
             <li><a class="dropdown-item" th:onclick="|location.href='@{/main/profile}'|" onclick="location.href='profile.html'">Profile</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Sign out</a></li>
@@ -74,10 +68,14 @@
           <div class="collapse show" id="home-collapse">
             <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
               <li id="side-info-edit"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">내 정보 수정</a></li>
-              <li id="side-account-info"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">계정 정보</a></li>
             </ul>
           </div>
         </li>
+        <span>
+          <button class="btn d-inline-flex align-items-left rounded border-0 collapsed">
+          나의 출석
+          </button>
+        </span>
       </ul>
     </aside>
   </div>
@@ -202,13 +200,13 @@
   var i = 0;
   var newHeight;
 
-  $('#side-my-info button').on('click',function() {
+  $('#side-my-info').on('click',function() {
     if(i==0) {
-      newHeight = '100px';
+      newHeight = '140px';
       i++;
     }
     else{
-      newHeight = '140px';
+      newHeight = '170px';
       i--;
     }
 
