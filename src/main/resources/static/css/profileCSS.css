@@ -75,6 +75,15 @@ aside {
     padding-left: 10px;
 }
 
+#logout {
+    position: absolute;
+    right: 190px;
+    bottom: 45px;
+    border-style: none;
+    background-color: white;
+    color: #0d6efd;
+}
+
 .btn-edit {
     position: absolute;
     right: 75px;
@@ -115,41 +124,41 @@ aside {
     font-size: 12pt;
 }
 
-#account-info {
-    position: relative;
-    height: 460px;
-    width: 700px;
-    border: 1.5px solid rgb(166, 166, 166);
-    border-radius: 30px;
-    background-color: white;
-}
+/*#account-info {*/
+/*    position: relative;*/
+/*    height: 460px;*/
+/*    width: 700px;*/
+/*    border: 1.5px solid rgb(166, 166, 166);*/
+/*    border-radius: 30px;*/
+/*    background-color: white;*/
+/*}*/
 
-.account-info-detail {
-    position: absolute;
-    width: 550px;
-    top: 30px;
-    left: 75px;
-    bottom: 30px;
-}
+/*.account-info-detail {*/
+/*    position: absolute;*/
+/*    width: 550px;*/
+/*    top: 30px;*/
+/*    left: 75px;*/
+/*    bottom: 30px;*/
+/*}*/
 
-.btn-account {
-    border-radius: 30px;
-    border: none;
-    width: 120px;
-    height: 40px;
-    background-color: #0d6efd;
-    color: white;
-    font-weight: 500;
-    font-size: 12pt;
-}
+/*.btn-account {*/
+/*    border-radius: 30px;*/
+/*    border: none;*/
+/*    width: 120px;*/
+/*    height: 40px;*/
+/*    background-color: #0d6efd;*/
+/*    color: white;*/
+/*    font-weight: 500;*/
+/*    font-size: 12pt;*/
+/*}*/
 
-#btn-change-password {
-    border-radius: 30px;
-    border: none;
-    width: 200px;
-    height: 40px;
-    background-color: #0d6efd;
-    color: white;
-    font-weight: 500;
-    font-size: 12pt;
-}
+/*#btn-change-password {*/
+/*    border-radius: 30px;*/
+/*    border: none;*/
+/*    width: 200px;*/
+/*    height: 40px;*/
+/*    background-color: #0d6efd;*/
+/*    color: white;*/
+/*    font-weight: 500;*/
+/*    font-size: 12pt;*/
+/*}*/
