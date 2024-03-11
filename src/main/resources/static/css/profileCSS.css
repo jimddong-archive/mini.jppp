@@ -125,7 +125,9 @@ aside {
 }
 
 .wrapper{
-    width: 450px;
+    position: relative;
+    top: 10px;
+    width: 700px;
     background: #fff;
     border: 1.5px solid rgb(166, 166, 166);
     border-radius: 30px;

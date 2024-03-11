@@ -33,6 +33,11 @@ const renderCalendar = () => {
   }
   currentDate.innerText = `${months[currMonth]} ${currYear}`;
   daysTag.innerHTML = liTag;
+
+  $(liTag).click(function handleDateClick() {
+    const check = (new Date(currYear, currMonth, day) < new Date().setHours(0, 0, 0, 0)) ? 1 : 0;
+    $('.days').attr('data-bs-target', check ? '#alertCheckOne' : '#alertCheckZero');
+  });
 }
 renderCalendar();
 
@@ -50,21 +55,10 @@ prevNextIcon.forEach(icon => {
   });
 });
 
-function handleDateClick(day) {
-  let check;
-
-  if (new Date(currYear, currMonth, day) < new Date().setHours(0, 0, 0, 0)) {
-    check = 1;
-  } else if (new Date(currYear, currMonth, day) > new Date().setHours(0, 0, 0, 0)) {
-    check = 1;
-  } else {
-    check = 0;
-  }
-
-  if (check === 0) {
-    $('.days').attr('data-bs-target','#alertCheckZero');
-  } else {
-    $('.days').attr('data-bs-target','#alertCheckOne');
-  }
-}
+// $(liTag).click(function handleDateClick() {
+//   const check = (new Date(currYear, currMonth, day) < new Date().setHours(0, 0, 0, 0)) ? 1 : 0;
+//   $('.days').attr('data-bs-target', check ? '#alertCheckOne' : '#alertCheckZero');
+// });
+//
+// renderCalendar();
 
